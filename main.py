@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def scrape():
-    url = "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88_(%E6%98%A0%E7%94%BB)"
+    url = "https://minkabu.jp/"
     res = requests.get(url)
     soup = BeautifulSoup(res.text, "html.parser")
     
